@@ -1,5 +1,7 @@
-/* styles.css */
-
+html
+{
+    scroll-behavior: smooth;
+}
 :root {
   --primary-color: #2c3e50;
   --accent-color: #e74c3c;
@@ -15,23 +17,33 @@ body {
   padding: 0;
   background: var(--background-color);
   color: var(--text-color);
+  align-items: center;
 }
 
-header {
-  background: var(--primary-color);
-  color: white;
+.header {
+    background-color: white;
   padding: 2rem 0;
   text-align: center;
+  width: 600px;
+  margin-left: 35%;
+  margin-top: 5%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 10px 15px 30px 1px #b5b5b5;
 }
 
-header h1 {
-  font-size: 2.8rem;
+.header h1 {
+  font-size: 30px;
   font-weight: 700;
   margin: 0;
+  color: black;
 }
 
-header p {
-  font-size: 1.2rem;
+.header p {
+  font-size: 15px;
   margin-top: 0.5rem;
 }
 
@@ -52,28 +64,38 @@ main {
 }
 
 .search-box input {
-  width: 60%;
+  width: 400px;
   max-width: 600px;
   padding: 0.8rem;
-  font-size: 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
   outline: none;
-}
-
-.search-box input:focus {
-  border-color: var(--accent-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+    box-shadow: 10px 15px 30px 1px #b5b5b5;
 }
 
 .search-box button {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  font-size: 15px;
   color: white;
   background: var(--accent-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   transition: background 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
 }
 
 .search-box button:hover {
@@ -81,18 +103,20 @@ main {
 }
 
 .note {
-  margin-top: 1rem;
+  margin-top: 3%;
   font-size: 0.9rem;
   color: #555;
 }
 
 footer {
-  background: var(--primary-color);
-  color: white;
+  background: white;
+  color: black;
   text-align: center;
   padding: 1.5rem 0;
-  margin-top: 2rem;
+  margin-top: 14%;
   font-size: 0.9rem;
+  height: 150px;
+  box-shadow: 10px -10px 30px 1px #b5b5b5;
 }
 
 footer a {
@@ -106,151 +130,30 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .search-box {
-    flex-direction: column;
-  }
+    .header{
+        width: 350px;
+        margin-left: 5%;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .header p{
+        font-size: 10px;
+    }
 
   .search-box input {
-    width: 80%;
-  }
-
-  .search-box button {
     width: 50%;
+    font-size: 10px;
   }
-
-  header h1 {
-    font-size: 2rem;
+  .note{
+    margin-top: 10%;
+    font-size: 13px;
   }
-
-  header p {
-    font-size: 1rem;
+  footer{
+    margin-top: 78%;
+    height: 100px;
   }
-}
-/* styles.css */
-
-:root {
-  --primary-color: #2c3e50;
-  --accent-color: #e74c3c;
-  --background-color: #ecf0f1;
-  --text-color: #2c3e50;
-  --button-hover-color: #c0392b;
-  --font-family: "Roboto", sans-serif;
-}
-
-body {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  background: var(--background-color);
-  color: var(--text-color);
-}
-
-header {
-  background: var(--primary-color);
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-main {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.search-section {
-  margin-top: 2rem;
-}
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.search-box input {
-  width: 60%;
-  max-width: 600px;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
-  outline: none;
-}
-
-.search-box input:focus {
-  border-color: var(--accent-color);
-}
-
-.search-box button {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  color: white;
-  background: var(--accent-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.search-box button:hover {
-  background: var(--button-hover-color);
-}
-
-.note {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-footer {
-  background: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1.5rem 0;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .search-box {
-    flex-direction: column;
-  }
-
-  .search-box input {
-    width: 80%;
-  }
-
-  .search-box button {
-    width: 50%;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
+  footer p{
+    font-size: 13px;
   }
 }
