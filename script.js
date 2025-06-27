@@ -13,11 +13,9 @@ function handleSearch() {
   const annaUrl = `https://annas-archive.org/search?q=${encodeURIComponent(
     query
   )}`;
-  const zlibUrl = `https://z-lib.gs/s/${encodeURIComponent(query)}`;
 
   // Open both URLs in new tabs
   window.open(annaUrl, "_blank");
-  window.open(zlibUrl, "_blank");
 }
 
 // Event listener for the "Search" button
