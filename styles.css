@@ -81,7 +81,7 @@ main {
 .search-box button {
   font-size: 15px;
   color: white;
-  background: var(--accent-color);
+  background: blue;
   border: none;
   border-radius: 20px;
   width: 40px;
