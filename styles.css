@@ -81,7 +81,7 @@ main {
 .search-box button {
   font-size: 15px;
   color: white;
-  background: blue;
+  background: gray;
   border: none;
   border-radius: 20px;
   width: 40px;
@@ -99,7 +99,7 @@ main {
 }
 
 .search-box button:hover {
-  background: var(--button-hover-color);
+  background: black;
 }
 
 .note {
